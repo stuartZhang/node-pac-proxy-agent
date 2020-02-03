@@ -1,6 +1,6 @@
 {
-  "name": "pac-proxy-agent",
-  "version": "3.0.1",
+  "name": "pac-proxy-agent-stzhang",
+  "version": "1.0.1",
   "description": "A PAC file proxy `http.Agent` implementation for HTTP",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/node-pac-proxy-agent.git"
+    "url": "git://github.com/stuartZhang/node-pac-proxy-agent.git"
   },
   "keywords": [
     "pac",
@@ -20,12 +20,12 @@
     "request",
     "access"
   ],
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
+  "author": "Stuart Zhang <stuartpage@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TooTallNate/node-pac-proxy-agent/issues"
+    "url": "https://github.com/stuartZhang/node-pac-proxy-agent/issues"
   },
-  "homepage": "https://github.com/TooTallNate/node-pac-proxy-agent",
+  "homepage": "https://github.com/stuartZhang/node-pac-proxy-agent",
   "dependencies": {
     "agent-base": "^4.2.0",
     "debug": "^4.1.1",

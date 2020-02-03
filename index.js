@@ -33,7 +33,7 @@ var SocksProxyAgent = require('socks-proxy-agent');
 var PacResolver = require('pac-resolver');
 var getRawBody = require('raw-body');
 var inherits = require('util').inherits;
-var debug = require('debug')('pac-proxy-agent');
+var debug = require('debug')('pac-proxy-agent-stzhang');
 
 /**
  * The `PacProxyAgent` class.
@@ -243,7 +243,7 @@ function connect (req, opts, fn) {
         socket = net.connect(opts);
       }
       return fn(null, socket);
-    } else if ('SOCKS' == type) {
+    } else if ('SOCKS' == type || 'SOCKS5' == type) {
       // use a SOCKS proxy
       agent = new SocksProxyAgent('socks://' + parts[1]);
     } else if ('PROXY' == type || 'HTTPS' == type) {

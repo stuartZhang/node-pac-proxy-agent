@@ -1,7 +1,9 @@
-pac-proxy-agent
+pac-proxy-agent-stzhang
 ===============
+
 ### A [PAC file][pac-wikipedia] proxy `http.Agent` implementation for HTTP and HTTPS
-[![Build Status](https://travis-ci.org/TooTallNate/node-pac-proxy-agent.svg?branch=master)](https://travis-ci.org/TooTallNate/node-pac-proxy-agent)
+
+[![Build Status](https://travis-ci.org/TooTallNate/node-pac-proxy-agent.svg?branch=master)](https://travis-ci.org/stuartZhang/node-pac-proxy-agent)
 
 This module provides an `http.Agent` implementation that retreives the specified
 [PAC proxy file][pac-wikipedia] and uses it to resolve which HTTP, HTTPS, or
@@ -17,7 +19,7 @@ Installation
 Install with `npm`:
 
 ``` bash
-$ npm install pac-proxy-agent
+$ npm install pac-proxy-agent-stzhang
 ```
 
 
@@ -27,7 +29,7 @@ Example
 ``` js
 var url = require('url');
 var http = require('http');
-var PacProxyAgent = require('pac-proxy-agent');
+var PacProxyAgent = require('pac-proxy-agent-stzhang');
 
 // URI to a PAC proxy file to use (the "pac+" prefix is stripped)
 var proxy = 'pac+https://cloudup.com/ceGH2yZ0Bjp+';
@@ -54,7 +56,7 @@ License
 
 (The MIT License)
 
-Copyright (c) 2014 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
+Copyright (c) 2014 Nathan Rajlich &lt;nathan@stuartZhang.net&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
